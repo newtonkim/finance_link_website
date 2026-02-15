@@ -47,7 +47,15 @@ const FaqItem = defineComponent({
         <ul class="nav-links" :class="{ 'active': isMobileMenuOpen }">
           <li><a href="#" class="nav-link active">Home</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#features" class="nav-link">Features</a></li>
+          <li class="dropdown">
+            <a href="#" class="nav-link">Features <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="/features/core-banking">FinanceLink Core Banking Platform</a></li>
+              <li><a href="/features/financial-literacy">Financial Literacy</a></li>
+              <li><a href="/features/point-of-sale">Point of Sale</a></li>
+              <li><a href="/features/wallet">FinanceLink Wallet</a></li>
+            </ul>
+          </li>
           <li class="dropdown">
             <a href="#solutions" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
             <ul class="dropdown-menu">

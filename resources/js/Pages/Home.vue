@@ -35,7 +35,7 @@ const FaqItem = defineComponent({
     <!-- Hero Section -->
     <section class="hero section-padding">
       <div class="container hero-grid">
-        <div class="hero-content animate-fade-in-up">
+        <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
           <span class="badge">Next-Gen Financial Freedom</span>
           <h1>Empowering <span class="text-emerald">SACCOs</span> & Individuals with Smart Tech.</h1>
           <p>Automate your financial operations with institutional-grade software or grow your personal wealth with 14% APY. No drama, just growth.</p>
@@ -58,7 +58,7 @@ const FaqItem = defineComponent({
             </div>
           </div>
         </div>
-        <div class="hero-visual animate-fade-in-up" style="animation-delay: 0.2s;">
+        <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
           <div class="dashboard-mockup glass-card">
             <div class="mockup-header">
               <div class="dot red"></div>
@@ -89,18 +89,18 @@ const FaqItem = defineComponent({
     <section id="about" class="about section-padding">
       <div class="container grid-2">
         <div class="text-content">
-          <span class="badge">About FinanceLink</span>
-          <h2>More Than Just a Financial Tool.</h2>
-          <p>Founded with the mission to bridge the gap between traditional SACCO operations and the digital future, FinanceLink provides a robust infrastructure for growth. We believe in transparency, security, and community-driven wealth.</p>
+          <span class="badge" data-aos="fade-down">About FinanceLink</span>
+          <h2 data-aos="fade-right" data-aos-delay="100">More Than Just a Financial Tool.</h2>
+          <p data-aos="fade-up" data-aos-delay="200">Founded with the mission to bridge the gap between traditional SACCO operations and the digital future, FinanceLink provides a robust infrastructure for growth. We believe in transparency, security, and community-driven wealth.</p>
           <div class="about-features">
-            <div class="about-item">
+            <div class="about-item" data-aos="fade-up" data-aos-delay="300">
               <i class="fas fa-users-gear text-emerald"></i>
               <div>
                 <h4>Community First</h4>
                 <p>Designed specifically for the unique needs of African SACCOs and investment groups.</p>
               </div>
             </div>
-            <div class="about-item">
+            <div class="about-item" data-aos="fade-up" data-aos-delay="400">
               <i class="fas fa-lock text-emerald"></i>
               <div>
                 <h4>Secure by Design</h4>
@@ -109,7 +109,7 @@ const FaqItem = defineComponent({
             </div>
           </div>
         </div>
-        <div class="image-wrapper">
+        <div class="image-wrapper" data-aos="zoom-in" data-aos-delay="200">
           <div class="main-image bg-slate-100">
             <i class="fas fa-building-columns text-emerald"></i>
           </div>
@@ -148,17 +148,17 @@ const FaqItem = defineComponent({
 
         <div class="tab-content" :class="{ 'active': activeTab === 'individual' }" id="individual">
           <div class="feature-grid">
-            <div class="feature-card">
+            <div class="feature-card" data-aos="flip-left" data-aos-delay="100">
               <i class="fas fa-piggy-bank icon"></i>
               <h3>High-Yield Savings</h3>
               <p>Earn up to 14% APY on your savings with no hidden fees or "banking drama".</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card" data-aos="flip-left" data-aos-delay="200">
               <i class="fas fa-bolt icon"></i>
               <h3>Instant Credit</h3>
               <p>Get instant loans based on your saving habits. Approval in under 5 minutes.</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card" data-aos="flip-left" data-aos-delay="300">
               <i class="fas fa-globe icon"></i>
               <h3>Global Access</h3>
               <p>Manage your wealth from anywhere in the world with our secure digital platform.</p>
@@ -174,7 +174,7 @@ const FaqItem = defineComponent({
         <span class="badge">Pricing Plans</span>
         <h2 class="section-title">Investment Options</h2>
         <div class="pricing-grid">
-          <div class="pricing-card">
+          <div class="pricing-card" data-aos="fade-right" data-aos-delay="100">
             <h3>Starter</h3>
             <div class="price">Free<span>/month</span></div>
             <p>Perfect for small savings groups under 10 members.</p>
@@ -185,7 +185,7 @@ const FaqItem = defineComponent({
             </ul>
             <a href="#" class="btn btn-outline">Start Free</a>
           </div>
-          <div class="pricing-card featured">
+          <div class="pricing-card featured" data-aos="zoom-in" data-aos-delay="300">
             <div class="feat-badge">Most Popular</div>
             <h3>Digital SACCO</h3>
             <div class="price">$49<span>/month</span></div>
@@ -198,7 +198,7 @@ const FaqItem = defineComponent({
             </ul>
             <a href="#" class="btn btn-primary">Go Digital</a>
           </div>
-          <div class="pricing-card">
+          <div class="pricing-card" data-aos="fade-left" data-aos-delay="500">
             <h3>Enterprise</h3>
             <div class="price">Custom</div>
             <p>Tailored infrastructure for large credit unions.</p>
@@ -221,13 +221,13 @@ const FaqItem = defineComponent({
           <h2 class="section-title">Frequently Asked Questions</h2>
         </div>
         <div class="faq-accordion">
-          <FaqItem question="Is my money safe with FinanceLink?">
+          <FaqItem question="Is my money safe with FinanceLink?" data-aos="fade-up" data-aos-delay="100">
             <p>Yes. We use 256-bit bank-grade encryption and partner with licensed financial institutions to ensure all funds are held securely and insured where applicable.</p>
           </FaqItem>
-          <FaqItem question="How do I earn the 14% annual return?">
+          <FaqItem question="How do I earn the 14% annual return?" data-aos="fade-up" data-aos-delay="200">
             <p>Our high-yield savings products involve pooled investments in low-risk government securities and well-collateralized loan portfolios, passing the returns back to you.</p>
           </FaqItem>
-          <FaqItem question="Can I integrate my existing SACCO data?">
+          <FaqItem question="Can I integrate my existing SACCO data?" data-aos="fade-up" data-aos-delay="300">
             <p>Absolutely. Our onboarding team provides free data migration tools and support to move your records from spreadsheets or legacy software into FinanceLink.</p>
           </FaqItem>
         </div>

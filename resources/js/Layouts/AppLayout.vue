@@ -40,7 +40,7 @@ const toggleMobileMenu = () => {
           </li>
           <li><a href="/#pricing" class="nav-link">Pricing</a></li>
           <li><a href="/#faq" class="nav-link">FAQs</a></li>
-          <li><a href="/#about" class="btn btn-primary">Get Started</a></li>
+          <li><a href="#contact" class="btn btn-primary">Request Demo</a></li>
         </ul>
 
         <button class="mobile-menu-btn" @click="toggleMobileMenu">

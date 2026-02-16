@@ -59,27 +59,9 @@ const FaqItem = defineComponent({
           </div>
         </div>
         <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-          <div class="dashboard-mockup glass-card">
-            <div class="mockup-header">
-              <div class="dot red"></div>
-              <div class="dot yellow"></div>
-              <div class="dot green"></div>
-            </div>
-            <div class="mockup-body">
-              <div class="mockup-sidebar"></div>
-              <div class="mockup-main">
-                <div class="mockup-charts">
-                  <div class="chart-item" style="height: 40%;"></div>
-                  <div class="chart-item" style="height: 70%;"></div>
-                  <div class="chart-item" style="height: 50%;"></div>
-                  <div class="chart-item" style="height: 90%;"></div>
-                </div>
-                <div class="mockup-cards">
-                  <div class="m-card"></div>
-                  <div class="m-card"></div>
-                </div>
-              </div>
-            </div>
+          <div class="mockup-container">
+            <img src="/resources/images/hero-mobile-2.png" alt="SACCO Portfolio Mockup" class="hero-img mobile-back floating">
+            <img src="/resources/images/hero-mobile-1.png" alt="SACCO Dashboard Mockup" class="hero-img mobile-front floating">
           </div>
         </div>
       </div>
@@ -87,32 +69,30 @@ const FaqItem = defineComponent({
 
     <!-- About Section -->
     <section id="about" class="about section-padding">
+      <div class="container text-center">
+        <span class="badge" data-aos="fade-down">About FinanceLink</span>
+        <h2 class="section-title" data-aos="fade-down" data-aos-delay="100">About Us</h2>
+      </div>
       <div class="container grid-2">
         <div class="text-content">
-          <span class="badge" data-aos="fade-down">About FinanceLink</span>
-          <h2 data-aos="fade-right" data-aos-delay="100">More Than Just a Financial Tool.</h2>
-          <p data-aos="fade-up" data-aos-delay="200">Founded with the mission to bridge the gap between traditional SACCO operations and the digital future, FinanceLink provides a robust infrastructure for growth. We believe in transparency, security, and community-driven wealth.</p>
-          <div class="about-features">
-            <div class="about-item" data-aos="fade-up" data-aos-delay="300">
-              <i class="fas fa-users-gear text-emerald"></i>
-              <div>
-                <h4>Community First</h4>
-                <p>Designed specifically for the unique needs of African SACCOs and investment groups.</p>
-              </div>
-            </div>
-            <div class="about-item" data-aos="fade-up" data-aos-delay="400">
-              <i class="fas fa-lock text-emerald"></i>
-              <div>
-                <h4>Secure by Design</h4>
-                <p>Our platform uses multi-layer encryption to ensure your members' data is always safe.</p>
-              </div>
-            </div>
-          </div>
+          <h3 data-aos="fade-right" data-aos-delay="200">What is FinanceLink?</h3>
+          <p data-aos="fade-up" data-aos-delay="300">FinanceLink is a comprehensive digital solution designed to help SACCOs and Microfinance Institutions deliver convenient, mobile-first financial services to their members and customers.</p>
+          
+          <p data-aos="fade-up" data-aos-delay="350">Through FinanceLink, users can securely:</p>
+          <ul class="check-list" data-aos="fade-up" data-aos-delay="400">
+            <li><i class="fas fa-check"></i> Deposit funds into their accounts</li>
+            <li><i class="fas fa-check"></i> Withdraw money with ease</li>
+            <li><i class="fas fa-check"></i> Make payments for various SACCO products and services</li>
+            <li><i class="fas fa-check"></i> Access financial services anytime, anywhere</li>
+          </ul>
+
+          <p data-aos="fade-up" data-aos-delay="450">FinanceLink bridges the gap between financial institutions and their members, ensuring accessibility, security, and efficiency in every transaction.</p>
         </div>
-        <div class="image-wrapper" data-aos="zoom-in" data-aos-delay="200">
-          <div class="main-image bg-slate-100">
-            <i class="fas fa-building-columns text-emerald"></i>
-          </div>
+        <div class="text-content" data-aos="fade-left" data-aos-delay="200">
+          <h3 data-aos="fade-left" data-aos-delay="300">Why FinanceLink?</h3>
+          <p data-aos="fade-up" data-aos-delay="400">FinanceLink is built to transform financial service delivery by expanding financial inclusion, enhancing accessibility, and simplifying institutional operations.</p>
+          <p data-aos="fade-up" data-aos-delay="450">Our platform empowers financial institutions to operate more efficiently while giving members greater control, transparency, and flexibility over their finances.</p>
+          <p data-aos="fade-up" data-aos-delay="500">By enabling fast, secure, and reliable digital transactions, FinanceLink strengthens institutional performance and delivers a seamless, modern financial experience for both SACCOs and Microfinance Institutions.</p>
         </div>
       </div>
     </section>
